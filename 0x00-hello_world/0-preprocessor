@@ -1,2 +1,22 @@
-^#!\s*/bin/bash
-gcc  $CFILe -E -o c
+#include <stdio.h>
+
+
+
+/**
+
+ * main - Entry point
+
+ *
+
+ * Return: Always 0 (Success)
+
+ */
+
+int main(void)
+
+{
+return (0);
+
+}
+
+gcc -E $CFILE -o c

@@ -1,2 +1,2 @@
-#include <stdio.h>
+^#!\s*/bin/bash
 gcc  $CFILe -E -o c

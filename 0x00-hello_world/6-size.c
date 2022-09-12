@@ -1,11 +1,10 @@
 #include <stdio.h>
 
 /**
- *
- * main - entry point
+ *Description: main -prints out a string to the stdout
  *
  * return: always 0 (success)
- */
+*/
 int main(void)
 {
 	int a;

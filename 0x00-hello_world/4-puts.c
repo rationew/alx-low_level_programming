@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+/** 
+ * print out a sring to the standard ouput
+ * retutn = 0
+ */
 int main(void)
 
 {

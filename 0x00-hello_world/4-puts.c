@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /** 
- * print out a sring to the standard ouput
- * retutn = 0
+ *Description: main - print out a sring to the stdout
+ * Return: 0 if success
  */
 int main(void)
 

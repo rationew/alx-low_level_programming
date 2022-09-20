@@ -1,24 +1,27 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * rev_string  - Reverse string
  * @s: pointer of string
+ *
  * Return: void
  */
 void rev_string(char *s)
 {
-	/*get current address/pointers */
-	int first, last, len;
-	char str;
+	int a = 0, b = 0;
+	char str[500];
 
-	for (len = 0; *s != '\0'; len++)
+	while (*(s + a))
 	{
-		s++;
+		*(str + a) = *(s + a);
+		a++;
 	}
-	for (first = 0, last = len - 1; first < last; first++, last--)
+	a = a - 1;
+	while (a >= 0)
 	{
-		str = s[first];
-		s[first] = s[last];
-		s[last] = str;
+		*(s + a) = *(str + b);
+		b++;
+		a--;
 	}
 }

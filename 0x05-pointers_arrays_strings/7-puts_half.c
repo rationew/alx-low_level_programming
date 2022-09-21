@@ -8,24 +8,23 @@
  */
 void puts_half(char *str)
 {
-	char a = 0;
-	int c;
-
-	while (*(str + a))
-		a++;
+	int index = 0;
+	int i;
+	for (index = 0; str[index]; index++)
+		;
+	/* get odd lengths */
+	if (index % 2 == 1)
 	{
-		c = a / 2;
-		_putchar(c);
-	}
-	if (a % 2 == 0)
-	{
-		_putchar(a);
+		i= (index - 1) / 2;
+		i+= 1;
 	}
 	else
 	{
-		c = a - 1 / 2;
-		_putchar(c);
+		i = index / 2;
+	}
+	for (; i < index; i++)
+	{
+		_putchar(str[i]);
 	}
 	_putchar('\n');
-
 }

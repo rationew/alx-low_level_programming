@@ -1,0 +1,22 @@
+#include "main.h"
+#include <stdio.h>
+#include <stddef.h>
+
+/**
+  * print_binary - converts unsigned int into binary
+  * @n: number to convert to binary
+  * Return: binary format of the number
+  */
+
+void print_binary(unsigned long int n)
+{
+	if (n >> 0)
+	{
+		if (n >> 1)
+			print_binary(n >> 1);
+		_putchar((n & 1) + '0');
+	}
+
+	else
+		_putchar('0');
+}
